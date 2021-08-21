@@ -26,7 +26,7 @@ let intervalId = null;
 //----- start-----
 function onStart () {
     intervalId = setInterval(() => {
-        refs.body.style.background = colors[randomIntegerFromInterval(0, 6)]
+        refs.body.style.background = colors[randomIntegerFromInterval(0, colors.length)]
     }, 1000);
     refs.startBtn.disabled = true;
 }
